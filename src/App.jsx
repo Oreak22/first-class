@@ -15,6 +15,7 @@ const App = () => {
     email: "kunle@lautech.student.edu.ng",
   });
 
+  const [userInput, setUserInput] = useState("");
   const user = [
     {
       id: 1,
@@ -290,6 +291,14 @@ const App = () => {
           />
         ))}
       </div>
+      {/* //////////////////////////////////// */}
+      <input type="text" onChange={(e) => setUserInput(e.target.value)} />
+      {userInput}
+      {/* ///////////////////////////////////// */}
+      <br /> <br /> <br />
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quos
+      cumque qui facilis, magnam mollitia eius doloribus illum voluptatem! Id
+      labore tenetur culpa laudantium officiis beatae ipsum sunt eaque saepe!
     </div>
   );
 };
